@@ -55,8 +55,6 @@ namespace MusicGenre.Infra.Deezer.Repository
             {
                 return null;
             }
-        
-            throw new NotImplementedException();
         }
 
         public void Dispose()

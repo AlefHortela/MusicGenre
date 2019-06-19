@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.28917.182
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{B3EE7376-D62E-4933-A529-23FFE8450A0B}"
 EndProject
@@ -26,6 +26,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.3 - CrossCutting", "4.3 - CrossCutting", "{BCC2F788-19B1-41BE-847B-E1D8CD60282B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicGenre.Infra.Weather", "MusicGenre.Infra.Weather\MusicGenre.Infra.Weather.csproj", "{25B58576-9C52-4FF4-9DAC-270B2F84FF51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicGenre.CrossCutting.IoC", "MusicGenre.CrossCutting.IoC\MusicGenre.CrossCutting.IoC.csproj", "{A34336BC-5803-4593-AB8B-3832DFCDCAA1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{25B58576-9C52-4FF4-9DAC-270B2F84FF51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25B58576-9C52-4FF4-9DAC-270B2F84FF51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25B58576-9C52-4FF4-9DAC-270B2F84FF51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A34336BC-5803-4593-AB8B-3832DFCDCAA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A34336BC-5803-4593-AB8B-3832DFCDCAA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A34336BC-5803-4593-AB8B-3832DFCDCAA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A34336BC-5803-4593-AB8B-3832DFCDCAA1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +72,7 @@ Global
 		{8B5EC712-FA1A-4078-A7AE-46E2CBAA8A1E} = {22F29BE3-C397-4371-9D3D-E9B0462609AB}
 		{BCC2F788-19B1-41BE-847B-E1D8CD60282B} = {22F29BE3-C397-4371-9D3D-E9B0462609AB}
 		{25B58576-9C52-4FF4-9DAC-270B2F84FF51} = {8B5EC712-FA1A-4078-A7AE-46E2CBAA8A1E}
+		{A34336BC-5803-4593-AB8B-3832DFCDCAA1} = {BCC2F788-19B1-41BE-847B-E1D8CD60282B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB7B7EB9-ECEE-4EFD-B20F-8E98ADFB65D3}

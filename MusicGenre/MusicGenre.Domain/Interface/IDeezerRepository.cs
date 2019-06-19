@@ -2,7 +2,6 @@
 using MusicGenre.Domain.Model.DeezerModel;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace MusicGenre.Domain.Interface

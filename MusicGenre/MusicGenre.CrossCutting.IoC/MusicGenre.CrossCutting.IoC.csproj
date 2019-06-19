@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MusicGenre.Application\MusicGenre.Application.csproj" />
+    <ProjectReference Include="..\MusicGenre.Domain\MusicGenre.Domain.csproj" />
+    <ProjectReference Include="..\MusicGenre.Infra.Deezer\MusicGenre.Infra.Deezer.csproj" />
+    <ProjectReference Include="..\MusicGenre.Infra.Weather\MusicGenre.Infra.Weather.csproj" />
+  </ItemGroup>
+
+</Project>
