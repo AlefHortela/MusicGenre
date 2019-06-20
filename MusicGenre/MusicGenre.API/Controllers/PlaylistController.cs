@@ -36,7 +36,8 @@ namespace MusicGenre.API.Controllers
         }
 
         /// <summary>
-        /// Change the Key of Weather API
+        /// Change the Key of Weather API available only during the run, when reestart the older Key came back.
+        /// to do a permanently change need to alter the file appsettings.json
         /// </summary>
         /// <param name="ApiKey"></param>
         /// <returns></returns>
