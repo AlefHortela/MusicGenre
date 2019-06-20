@@ -12,7 +12,7 @@ namespace MusicGenre.Infra.Weather.Repository
         public async Task<MainWeather> GetCurrentTemperatureAsync(string cityName)
         {
             var client = new HttpClient();
-            var uri = $"http://api.openweathermap.org/data/2.5/weather?q={cityName}&appid={apiKey}";
+            var uri = $"http://api.openweathermap.org/data/2.5/weather?q={cityName}&units=metric&appid={apiKey}";
 
             var response = await client.GetAsync(uri);
 

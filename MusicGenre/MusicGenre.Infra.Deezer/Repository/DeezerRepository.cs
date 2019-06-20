@@ -46,8 +46,8 @@ namespace MusicGenre.Infra.Deezer.Repository
             {
                 var playlistString = await response.Content.ReadAsStringAsync();
                 var playlist = JsonConvert.DeserializeObject<DeezerPlaylist>(playlistString);
-                if (playlist?.Tracks?.Count > 0)
-                    return playlist.Tracks;
+                if (playlist?.Tracks?.Data.Count > 0)
+                    return playlist.Tracks.Data;
                 else
                     return null;
             }

@@ -12,6 +12,6 @@ namespace MusicGenre.Domain.Model.DeezerModel
         [JsonProperty("title")]
         public string Title { get; set; }
         [JsonProperty("tracks")]
-        public List<DeezerTrack> Tracks { get; set; }
+        public DeezerDefaultSearch<DeezerTrack> Tracks { get; set; }
     }
 }
