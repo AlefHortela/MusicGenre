@@ -15,9 +15,9 @@ namespace MusicGenre.Domain.Service
             weatherRepository = _weatherRepository;
         }
 
-        public MainWeather GetCurrentTemperature(string cityName)
+        public MainWeather GetCurrentTemperature(string cityName, string apiKey)
         {
-            var weather = weatherRepository.GetCurrentTemperatureAsync(cityName).Result;
+            var weather = weatherRepository.GetCurrentTemperatureAsync(cityName, apiKey).Result;
 
             return weather;
         }

@@ -19,9 +19,9 @@ namespace MusicGenre.Application.App
             mapper = _mapper;
         }
 
-        public ResultAPIViewModel getTracksByCityName(string cityName)
+        public ResultAPIViewModel getTracksByCityName(string cityName, string apiKey)
         {
-            var mainWeather = mapper.Map<MainWeatherViewModel>(weatherService.GetCurrentTemperature(cityName));
+            var mainWeather = mapper.Map<MainWeatherViewModel>(weatherService.GetCurrentTemperature(cityName, apiKey));
 
             var resultAPI = new ResultAPIViewModel();
 

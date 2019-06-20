@@ -8,9 +8,9 @@ namespace MusicGenre.Infra.Weather.Repository
 {
     public class WeatherRepository : IWeatherRepository
     {
-        private string apiKey = "0a423629a120f69f5ac027bda407ebc2";
-        public async Task<MainWeather> GetCurrentTemperatureAsync(string cityName)
+        public async Task<MainWeather> GetCurrentTemperatureAsync(string cityName, string apiKey)
         {
+
             var client = new HttpClient();
             var uri = $"http://api.openweathermap.org/data/2.5/weather?q={cityName}&units=metric&appid={apiKey}";
 
@@ -27,7 +27,7 @@ namespace MusicGenre.Infra.Weather.Repository
             }
             else
             {
-                return null;
+                throw new System.Exception(response.ToString());
             }
         }
     }

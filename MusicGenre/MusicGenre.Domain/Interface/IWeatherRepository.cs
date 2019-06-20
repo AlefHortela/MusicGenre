@@ -5,6 +5,6 @@ namespace MusicGenre.Domain.Interface
 {
     public interface IWeatherRepository
     {
-        Task<MainWeather> GetCurrentTemperatureAsync(string cityName);
+        Task<MainWeather> GetCurrentTemperatureAsync(string cityName, string apiKey);
     }
 }
